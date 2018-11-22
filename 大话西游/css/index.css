@@ -1,0 +1,453 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.wrpe-big{
+    width: 100%;
+    height: 4379px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    background: url(../img/111.webp) center 608px no-repeat;
+}
+
+.header{
+    width: 100%;
+    height: 55px;
+    background:white;
+    position: relative;
+    line-height: 24px;
+}
+.header .inner{
+    width: 1000px;
+    height: 55px;
+    margin: auto;
+
+}
+.header .logo{
+    width: 133px;
+    height: 44px;
+    display: block;
+    float: left;
+    margin-top: 5px;
+    background: url(../img/1.png) no-repeat;
+} 
+.header .inner .news{
+    height: 54px;
+    position: absolute;
+    z-index: 13;
+    width: 420px;
+    left: 280px;
+    padding-left: 18px;
+    padding-top: 0;
+    /* overflow: hidden; */
+} 
+.inner .news .yin{
+    width: 960px;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+.header .inner .news:hover .yin{
+    height: 250px;
+    border-color: #1f1f1f;
+}
+.header .inner .mid{
+    position: absolute;
+    text-align: right;
+    right:310px;
+    width: 536px;
+    font-size: 12px;
+
+}
+.inner .mid a{
+    color: #333;
+    line-height: 52px;
+    padding: 0 12px;
+    display: inline-block;
+    transition: background ease-in-out .33s;
+}
+.inner .mid a:hover{
+    border-bottom: 3px solid #bc2e2e;
+    background-color: #F3F3F3;
+}
+.header .inner .mu{
+    height: 25px;
+    width: 108px;
+    font-size: 12px;
+    color: #bc2e2e;
+    position: absolute;
+    padding: 8px 0 12px;
+    line-height:35px;
+    right: 165px;
+    display: inline-block;
+    overflow: hidden;
+    transition: background ease-in-out .33s;
+}
+.header .inner .mu:hover{
+    border-bottom: 3px solid #bc2e2e;
+    background-color: #F3F3F3;
+}
+.inner .mu .icon-w{
+    position: relative;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-color: #fff;
+    overflow: hidden;
+} 
+i{
+    display: inline-block;
+} 
+.mu .icon-w .san{
+    width: 9px;
+    height: 4px;
+    float: left;
+    margin: 6px 0 0 4px;
+    background-position: -103px -101px;
+}
+.icon1{
+    background: url(../img/4.png) no-repeat;
+}
+.header .inner .wrpe{
+    float: right;
+    position: relative;
+}
+.header .inner .hua{
+    position:absolute;
+    height: 110px;
+    line-height: 55px;
+    width: 123px;
+    color: #333;
+    font-size: 12px
+    
+}
+/* ===========header   e===================================== */
+.nav-box{
+    width: 100%;
+    height: 110px;
+    line-height: 110px;
+    background: url(../img/5.webp) center top no-repeat;
+   
+}
+.nav-box .inner{
+    width: 1200px;
+    height: 110px;
+    margin: auto;
+}
+.nav-box .inner .logo2{
+    float: left;
+    display: block;
+    width: 200px;
+    height: 79px;
+    background: url(../img/6.webp);
+    font-size: 0;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+.nav-box .inner .col-box{
+    float: left;
+} 
+
+.inner .col-box .nav-btn{
+    padding: 0 16px;
+    height: 107px;
+    position: relative;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+} 
+.inner .col-box .current{
+    color: #fff;
+    background: url(../img/7.webp);
+} 
+.col-box .nav-btn:hover{
+    color: #fff;
+    background: url(../img/7.webp);
+}
+.nav-box .inner .shen{
+    position: relative;
+    padding-left: 24px;
+    height: 110px;
+    float: left;
+    margin-right: 20px;
+}
+.inner .shen .shen-icon{
+   
+    font-size: 14px;
+    color: #fff;
+    margin-left: 10px;
+}  
+.icon2{
+background: url(../img/8.png) no-repeat;
+}
+.shen .shen-icon .icon-shen{
+    width: 33px;
+    height: 33px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: -173px -685px;
+}
+.shen .shen-icon .icon-shen:hover{
+    background-position: -130px -685px;
+}
+.inner .shen .i-line{
+    height: 23px;
+    width: 1px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 0;
+    background: #a38f79;
+    margin-right: 5px;
+} 
+.nav-box .inner .wei-xin{
+    width: 181px;
+    height: 189px;
+    position: absolute;
+    left:-130%;
+    margin-left: 268px;
+    top:97px;
+    display: none;
+    z-index: 10;
+}
+.nav-box .inner .shen:hover .wei-xin{
+    display: block; 
+ }
+ /* ========================================== */
+.banner{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.banner .slider-item{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/10.jpg)
+} 
+.banner .slider-item2{
+    background: url(../img/12.jpg)
+}
+.banner .banner-prev,.banner .banner-next{
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    margin-top: -36px;
+    display: block;
+    width: 73px;
+    height: 73px;
+    opacity: .5;
+    background: url(../img/11.png);
+} 
+.banner .banner-next{
+left: auto;
+right: 3%;
+background-position: right bottom;
+}
+/* ==============banner  e========================= */
+.inner-san{
+    width: 1200px;
+    height: 920px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    margin: auto;
+}
+.download-box{
+    width: 230px;
+    height: 307px;
+    float: left;
+    margin-bottom: 80px;
+}  
+.download-box .xia-zai{
+    display: block;
+    height: 90px;
+    background-repeat: no-repeat; 
+    background-position: -387px -125px;
+}
+.download-box .kou-dai{
+    display: block;
+    height: 90px;
+    background-repeat: no-repeat; 
+    background-position: -240px -302px; 
+} 
+.download-box .zu{
+    display: block;
+    height: 109px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: -387px 0px;
+} 
+.download-box .zu .btn-1{
+    width: 115px;
+    height: 52px;
+    display: inline-block;
+    float: left;
+    background-position: -494px -408px;
+    background-repeat: no-repeat; 
+} 
+.download-box .zu .btn-2{
+    background-position: -240px -231px;
+}
+.download-box .zu .btn-3{
+    background-position: -387px -231px;
+}
+.download-box .zu .btn-4{
+    background-position: -627px -402px;
+}
+.btns-box{
+    width: 545px;
+    height: 57px;
+    background: #f9f7f4;
+    border-bottom: 1px solid #d6d4d2;
+    text-align: center;
+    line-height: 57px;
+    font-size: 0;
+    margin-left:40px;
+    float: left;
+}
+.btns-box em{
+    position: absolute;
+    bottom: -1px;
+    left: 77px;
+    width: 66px;
+    height: 3px;
+    background: #c41e20;
+    display: none;
+}
+
+.btns-box .btn-icon{
+    font-size: 16px;
+    color: #212121;
+    width: 180px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+} 
+.btns-box .btn-icon:hover em{
+    display: block;
+}
+.btns-box .btn-icon .qi{
+    height: 31px;
+    background-repeat: no-repeat;
+    width: 28px;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: -835px -542px;
+}
+.btns-box .btn-icon-02 .qi{
+    width: 45px;
+    background-position: -462px -685px;
+}
+.btns-box .btn-icon-03 .qi{
+    background-position: -515px -685px;
+}
+.banner-nav{
+    position: absolute;
+    height: 30px;
+    right: 417px;
+    top:742px;
+    background: #333e50;
+    z-index: 99;
+}
+.banner-nav .guan{
+    display: block;
+    line-height: 30px;
+    float: left;
+    font-size: 16px;
+    color: #fff;
+    min-width: 50px;
+    text-align: center;
+}
+.on{
+    background:#a91717;
+}
+
+.inner-san .slide-box{
+    width: 585px;
+    height: 249px;
+    margin-bottom: 80px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+.inner-san .slide-box .slide-fade{
+    position: absolute;
+    top:0;
+    left:0;
+} 
+
+.slide-box .slide-fade img{
+    margin-left: 40px;
+    width: 545px;
+    height: 233px;
+}
+.inner-san .slide-box .slider-nav{
+    position: absolute;
+    bottom:16px;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    height: 58px;
+    width: 100%;
+    text-align: center;
+    margin-left: 40px;
+}
+.slide-box .slider-nav .jiu{
+    display: block;
+    float: left;
+    width: 69px;
+    padding: 10px 20px;
+    line-height: 20px;
+    height: 38px;
+}  
+.slider-nav .jiu span{
+    line-height: 20px;
+    font-size: 15px;
+    color: #f6efde;
+    height: 38px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: normal;
+}
+.active{
+    background: url(../img/15.webp) no-repeat;
+}
+.inner-san .ovh-box{
+    width: 385px;
+    overflow: hidden;
+    position: relative;
+} 
+.ovh-box .tuijian-box{
+    position: relative;
+    margin-bottom: 80px;
+    height:292px;
+    background: #f8f4ee;
+    overflow: hidden;
+    padding-right: 0;
+    width: 385px;
+    margin-left: 30px;
+} 
+.ovh-box .tuijian-box .news-nav{
+    overflow: hidden;
+    position: relative;
+    height: 57px;
+    background: #f9f7f4;
+    background: rgba(249,247,244,.8);
+    border-bottom: 1px solid #d6d4d2;
+    line-height: 57px;
+    font-size: 0;
+} 
+

@@ -1,0 +1,295 @@
+html, body {
+    font: 12px Arial, "微软雅黑";
+    color: #929292;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+.logoClone{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    height: 40px;
+}
+.logoClone .logo{
+    margin: 20px 30px
+}
+/*======================左    logo=====================================*/
+.headSHBtn{
+    display: block;
+    left:1190px;
+    top: 20px;
+    color: #dedede;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 9999999;
+}
+.headSHBtn:hover{
+    background-color: #1f244f;
+}
+.headSHBtn:hover .bot{
+    transform: rotate(45deg);
+    top: 25px;
+    background: #fff;
+}
+.headSHBtn:hover .top{
+    transform: rotate(-45deg);
+    top: 25px;
+    background: #fff;
+}
+.headSHBtn .top{
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #999;
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    transition: all 0.3s ease-out 0s;
+}
+.headSHBtn .bot{
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #999;
+    position: absolute;
+    top: 28px;
+    left: 15px;
+    transition: all 0.3s ease-out 0s;
+}
+.index_nav{
+    width: 400px;
+    left: auto;
+    background-color: #FFF;
+    right: -400px;
+    /*right:0;*/
+    position: fixed;
+    z-index: 999999;
+}
+.content-yin{
+    padding-top: 100px;
+    background-color: #fff;
+    padding-bottom: 1000px;
+    box-shadow: 0px 2px 26px rgba(0, 0, 0, 0.1);
+}
+.content-yin ul li.navitem{
+    text-align: left;
+    border-top: 1px solid #F5F5F5;
+    padding: 0 50px 0;
+    line-height: 60px;
+    width: 100%;
+    height: 60px;
+    float: left;
+    position: relative;
+}
+.content-yin ul li.navitem:hover{
+    background: #f8f8f8;
+    cursor: pointer;
+}
+.content-yin ul li.navitem:hover ul.subnav{
+    opacity: 1;
+    visibility: visible;
+}
+ul li.navitem span{
+    color: #666;
+    font-size: 13px;
+    display: block;
+    overflow: hidden;
+}
+li.navitem span .icon-down{
+    margin-left: 10px;
+    padding-top: 3px;
+    display: inline-block;
+    font-weight: bolder;
+    line-height: 50px;
+
+}
+.content-yin ul li.navitem .subnav{
+    margin: -648px 0px 0px;
+    height: 2000px;
+    background-color: #fff;
+    overflow: hidden;
+    padding-top: 645px;
+    right: 100%;
+    left: auto;
+    z-index: 9999;
+    box-shadow: -4px 2px 6px rgba(0, 0, 0, 0.03);
+    top: 0;
+    transition: all 0.3s ease-out 0s;
+    position: absolute;
+    width: 210px;
+    border-top: #838383 3px solid;
+    opacity: 0;
+    visibility: hidden;
+}
+li.navitem .subnav li{
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+li.navitem .subnav li a{
+    padding: 14px 30px;
+    width: 150px;
+    height: 32px;
+    line-height: 32px;
+    background: #fff;
+    color: #777;
+    display: block;
+    font-size: 12px;
+}
+li.navitem .subnav li:hover a{
+    text-indent:1em;
+    transition: 1s;
+}
+/*============右   列表=========================================*/
+.gotop{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .8);
+    font-size:25px;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    bottom: 40px;
+    position: fixed;
+    right: 10px;
+}
+.gotop .icon-down-copy{
+    display: inline-block;
+    margin-top: 8px;
+    font-size:25px;
+}
+/*=========gotop      e======================================*/
+.mproject{
+    padding-top: 80px;
+}
+.mproject .inner{
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+
+}
+.mproject .inner .header{
+    padding: 60px 0 50px;
+    float: left;
+    width: auto;
+    margin-left: 4%;
+}
+.inner .header p{
+
+    text-align: center;
+}
+.inner .header .title{
+    font-size: 24px;
+    line-height: 30px;
+    color: #444;
+}
+.inner .header .subtitle{
+    color: #c1c1c1;
+    font-size: 16px;
+    text-align: left;
+}
+.mproject .inner .module-content{
+    float: left;
+    width: 100%;
+}
+.inner .module-content .wrapper{
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.module-content .wrapper .content_list{
+    width:1200px;
+}
+.wrapper ul .projectitem{
+    height: auto;
+    width: 283px;;
+    background: #f8f8f8;
+    margin-right:10px;
+    margin-bottom:10px;
+    float: left;
+    position: relative;
+}
+ul .projectitem a{
+    width: 283px;
+    height: 198px;
+    display: block;
+    overflow: hidden;
+}
+ul .projectitem a:hover::after{
+    opacity:1;
+}
+ul .projectitem a:after{
+    width: 90%;
+    height: 80%;
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+    top:21px;
+    left:15px;
+    border-top: 2px solid #4a4a4a;
+    border-bottom: 2px solid #4a4a4a;
+    margin-left: -2px;
+    margin-top: -2px;
+
+}
+ul .projectitem a:hover .project_info{
+    background: rgba(255, 255, 255, 0.92);
+}
+ul .projectitem a:hover img{
+    transform: scale(1.2, 1.2);
+}
+.projectitem a .project_img{
+    height: auto;
+    overflow: hidden;
+}
+a .project_img img{
+    display: block;
+    float: none;
+    width: 100%;
+    height: auto;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+.projectitem a .project_info{
+    width: 101%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all ease-out .3s;
+}
+a .project_info div{
+    position: relative;
+    top: 50%;
+    margin-top: -29px;
+}
+.project_info div p{
+    text-align: center;
+    padding: 0 20px;
+}
+.project_info div .title{
+    font-size: 18px;
+    margin: 0 0 20px;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    color: rgba(0, 0, 0, 0);
+
+}
+.project_info div .subtitle{
+    margin-top: 16px;
+    color: rgba(0, 0, 0, 0);
+    font-size: 13px;
+    transition: all ease-out .3s;
+}
+ul .projectitem a:hover p.title{
+    color: rgba(0, 0, 0, 1);
+}
+ul .projectitem a:hover p.subtitle{
+    color: rgba(0, 0, 0, 1);
+}

@@ -1,0 +1,346 @@
+html, body {
+    font: 12px Arial, "微软雅黑";
+    color: #929292;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+.logoClone{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    height: 40px;
+}
+.logoClone .logo{
+    margin: 20px 30px
+}
+/*======================左    logo=====================================*/
+.headSHBtn{
+    display: block;
+    left:1190px;
+    top: 20px;
+    color: #dedede;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 9999999;
+}
+.headSHBtn:hover{
+    background-color: #1f244f;
+}
+.headSHBtn:hover .bot{
+    transform: rotate(45deg);
+    top: 25px;
+    background: #fff;
+}
+.headSHBtn:hover .top{
+    transform: rotate(-45deg);
+    top: 25px;
+    background: #fff;
+}
+.headSHBtn .top{
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #999;
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    transition: all 0.3s ease-out 0s;
+}
+.headSHBtn .bot{
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #999;
+    position: absolute;
+    top: 28px;
+    left: 15px;
+    transition: all 0.3s ease-out 0s;
+}
+.index_nav{
+    width: 400px;
+    left: auto;
+    background-color: #FFF;
+    right: -400px;
+    /*right:0;*/
+    position: fixed;
+    z-index: 999999;
+}
+.content-yin{
+    padding-top: 100px;
+    background-color: #fff;
+    padding-bottom: 1000px;
+    box-shadow: 0px 2px 26px rgba(0, 0, 0, 0.1);
+}
+.content-yin ul li.navitem{
+    text-align: left;
+    border-top: 1px solid #F5F5F5;
+    padding: 0 50px 0;
+    line-height: 60px;
+    width: 100%;
+    height: 60px;
+    float: left;
+    position: relative;
+}
+.content-yin ul li.navitem:hover{
+    background: #f8f8f8;
+    cursor: pointer;
+}
+.content-yin ul li.navitem:hover ul.subnav{
+    opacity: 1;
+    visibility: visible;
+}
+ul li.navitem span{
+    color: #666;
+    font-size: 13px;
+    display: block;
+    overflow: hidden;
+}
+li.navitem span .icon-down{
+    margin-left: 10px;
+    padding-top: 3px;
+    display: inline-block;
+    font-weight: bolder;
+    line-height: 50px;
+
+}
+.content-yin ul li.navitem .subnav{
+    margin: -648px 0px 0px;
+    height: 2000px;
+    background-color: #fff;
+    overflow: hidden;
+    padding-top: 645px;
+    right: 100%;
+    left: auto;
+    z-index: 9999;
+    box-shadow: -4px 2px 6px rgba(0, 0, 0, 0.03);
+    top: 0;
+    transition: all 0.3s ease-out 0s;
+    position: absolute;
+    width: 210px;
+    border-top: #838383 3px solid;
+    opacity: 0;
+    visibility: hidden;
+}
+li.navitem .subnav li{
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+li.navitem .subnav li a{
+    padding: 14px 30px;
+    width: 150px;
+    height: 32px;
+    line-height: 32px;
+    background: #fff;
+    color: #777;
+    display: block;
+    font-size: 12px;
+}
+li.navitem .subnav li:hover a{
+    text-indent:1em;
+    transition: 1s;
+}
+/*============右   列表=========================================*/
+.gotop{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .8);
+    font-size:25px;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    bottom: 40px;
+    position: fixed;
+    right: 10px;
+    z-index: 10;
+}
+.gotop .icon-down-copy{
+    display: inline-block;
+    margin-top: 8px;
+    font-size:25px;
+}
+.banner{
+    width: 100%;
+    height: 320px;
+    position: relative;
+}
+.banner .bei{
+    background: url("img/banner.jpg");
+    background-color: #39383E;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 320px;
+}
+.content{
+    background-color: #fff;
+    position: relative;
+    /* z-index: 1; */
+    width: 1200px;
+    margin: 0 auto;
+}
+.content .header{
+    padding-bottom: 50px;
+    padding-top: 80px;
+    margin-left: 0;
+    float: left;
+} 
+.content .header p.title{
+    text-align: left;
+    font-size: 24px;
+    color: #444;
+}
+.content .header p.subtitle{
+    color: #c1c1c1;
+    font-size: 16px;
+    text-align: left;
+}
+.content .newslist{
+    width: 1200px;
+    margin: 0 auto;
+    float: left;
+} 
+.content .newslist .newsitem{
+    width: 100%;
+    height: 237px;
+    margin-bottom: 80px;
+} 
+.newslist .newsitem .newscontent{
+    height: 100%;
+    display: block;
+    text-align: center;
+    position: relative;
+    padding: 0px;
+} 
+.newsitem .newscontent .news_wrapper{
+    width: 603px;;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    transition: all 0.25s ease 0s;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+} 
+.newscontent .news_wrapper .newsbody{
+    width: 550px;
+    padding-left: 50px;
+    padding-top: 20px;
+    display: inline-block;
+    vertical-align: middle;
+} 
+.news_wrapper .newsbody p.date{
+    text-align: left;
+    position: relative;
+    bottom: -152px;
+    margin-bottom: 0;
+    color: #999;
+    font-size: 12px;
+}
+.newsbody p.date .year{
+    font-family: "HELVETICANEUELTPRO-THEX", "微软雅黑";
+    font-weight: bold;
+    font-size: 18px;
+    color: #838383;
+    margin-left: 0;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+} 
+.news_wrapper .newsbody p.date:after{
+    content: '';
+    display: block;
+    width: 10%;
+    height: 2px;
+    background: #4a4a4a;
+    position: absolute;
+    left: 0;
+    top: -16px;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+.newslist .newsitem:hover .date:after{
+    width: calc(100% + 50px);
+    left: -50px;
+}
+.news_wrapper .newsbody p.title{
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    font-size: 16px;
+    color: #323232;
+    line-height: inherit;
+    text-align: left;
+    margin-top: 0;
+    left: 0px;
+    padding: 5px 0 0;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+.news_wrapper .newsbody p.description{
+    width: 100%;
+    font-size: 13px;
+    color: #7A7A7A;
+    line-height: 26px;
+    text-align: left;
+    margin-top: 8px;
+    height: 55px;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+.newslist .newsitem:hover .newsbody p.title{
+    margin-top: -15px;
+}
+.newslist .newsitem:hover .newsbody p.description{
+    margin-top: 15px;
+}  
+.newsitem .newscontent .newsimg{
+    margin-left: 0;
+    width: 600px;
+    height: 237px;
+    float: left;
+    position: relative;
+    z-index: 3;
+    right: 0;
+    background: url(img/000.jpg);
+    background-position: center;
+    background-size: cover;
+} 
+.newsitem .newscontent .newsimg2{
+    background: url(img/0002.jpg);  
+}
+.newsitem .newscontent .newsimg3{
+    background: url(img/0333.jpg);   
+}
+.newsitem .newscontent .newsimg4{
+    background: url(img/0005.jpg);   
+}
+.footer-d{
+    background: #fff;
+    border-top: 1px solid #f4f4f4;
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.footer-d p{
+    padding: 8px 0;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 12px;
+    color: #8e8e8e;
+    height: 20px;
+    line-height: 20px;
+}
+.footer-d p a{
+    height: 20px;
+    color: #8e8e8e;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-right: 40px;
+}
